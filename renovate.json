@@ -1,5 +1,11 @@
 {
-  "extends": [
-    "config:base"
-  ]
+    "extends": [
+        "config:base",
+        ":preserveSemverRanges",
+        ":prNotPending"
+    ],
+    "addLabels": [
+        "dependencies"
+    ],
+    "semanticCommits": "enabled"
 }
